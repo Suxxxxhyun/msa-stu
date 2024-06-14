@@ -1,118 +1,39 @@
-2024-06-12T10:15:01.957+09:00  INFO 1128 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 1128 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:15:01.964+09:00 DEBUG 1128 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:15:01.965+09:00  INFO 1128 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:15:02.010+09:00  INFO 1128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:15:02.010+09:00  INFO 1128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:15:02.621+09:00  INFO 1128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:15:02.669+09:00  INFO 1128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
-2024-06-12T10:15:03.208+09:00  INFO 1128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:15:03.226+09:00  INFO 1128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:15:03.228+09:00  INFO 1128 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:15:03.277+09:00  INFO 1128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:15:03.277+09:00  INFO 1128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
-2024-06-12T10:15:03.480+09:00  INFO 1128 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:15:03.564+09:00  INFO 1128 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:15:03.727+09:00  WARN 1128 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:15:03.815+09:00  INFO 1128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:15:03.882+09:00  INFO 1128 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@62b0e6a2
-2024-06-12T10:15:03.884+09:00  INFO 1128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:15:03.903+09:00  INFO 1128 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:15:04.494+09:00  INFO 1128 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:15:04.500+09:00  INFO 1128 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:15:04.791+09:00  WARN 1128 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:15:05.170+09:00  INFO 1128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:15:05.207+09:00  INFO 1128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:15:05.215+09:00  INFO 1128 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.729 seconds (process running for 4.289)
-2024-06-12T10:15:43.800+09:00  INFO 1128 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:15:43.800+09:00  INFO 1128 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:15:43.801+09:00  INFO 1128 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-12T10:15:43.909+09:00  WARN 1128 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.msa.item.org.msa.item.dto.ResponseDTO> org.msa.item.org.msa.item.controller.ItemController.add(org.msa.item.org.msa.item.dto.ItemDTO): [Field error in object 'itemDTO' on field 'id': rejected value [null]; codes [NotBlank.itemDTO.id,NotBlank.id,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDTO.id,id]; arguments []; default message [id]]; default message [ID는 필수 입력 값입니다.]] ]
-2024-06-12T10:16:38.189+09:00  INFO 1128 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:16:38.192+09:00  INFO 1128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:16:38.194+09:00  INFO 1128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:16:43.936+09:00  INFO 18020 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 18020 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:16:43.938+09:00 DEBUG 18020 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:16:43.939+09:00  INFO 18020 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:16:43.984+09:00  INFO 18020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:16:43.984+09:00  INFO 18020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:16:44.662+09:00  INFO 18020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:16:44.709+09:00  INFO 18020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
-2024-06-12T10:16:45.262+09:00  INFO 18020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:16:45.280+09:00  INFO 18020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:16:45.280+09:00  INFO 18020 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:16:45.338+09:00  INFO 18020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:16:45.338+09:00  INFO 18020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1354 ms
-2024-06-12T10:16:45.575+09:00  INFO 18020 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:16:45.651+09:00  INFO 18020 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:16:45.862+09:00  WARN 18020 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:16:45.951+09:00  INFO 18020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:16:46.012+09:00  INFO 18020 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@77ad0d06
-2024-06-12T10:16:46.014+09:00  INFO 18020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:16:46.030+09:00  INFO 18020 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:16:46.501+09:00  INFO 18020 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:16:46.506+09:00  INFO 18020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:16:46.798+09:00  WARN 18020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:16:47.249+09:00  INFO 18020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:16:47.285+09:00  INFO 18020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:16:47.298+09:00  INFO 18020 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.761 seconds (process running for 4.13)
-2024-06-12T10:16:56.646+09:00  INFO 18020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:16:56.648+09:00  INFO 18020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:16:56.649+09:00  INFO 18020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-12T10:16:56.756+09:00  WARN 18020 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.msa.item.org.msa.item.dto.ResponseDTO> org.msa.item.org.msa.item.controller.ItemController.add(org.msa.item.org.msa.item.dto.ItemDTO): [Field error in object 'itemDTO' on field 'id': rejected value [test1dfdfdfdfdf]; codes [Size.itemDTO.id,Size.id,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDTO.id,id]; arguments []; default message [id],10,0]; default message [ID는 크기 10이하까지 작성가능합니다.]] ]
-2024-06-12T10:17:06.445+09:00  WARN 18020 --- [http-nio-8080-exec-4] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:17:06.446+09:00  WARN 18020 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:17:06.447+09:00 ERROR 18020 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:17:06.452+09:00 ERROR 18020 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
+2024-06-14T12:12:41.226+09:00  INFO 7532 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 7532 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
+2024-06-14T12:12:41.231+09:00 DEBUG 7532 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-14T12:12:41.233+09:00  INFO 7532 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T12:12:41.282+09:00  INFO 7532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-14T12:12:41.282+09:00  INFO 7532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-14T12:12:41.850+09:00  INFO 7532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T12:12:41.910+09:00  INFO 7532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2024-06-14T12:12:42.467+09:00  INFO 7532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-14T12:12:42.480+09:00  INFO 7532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T12:12:42.480+09:00  INFO 7532 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T12:12:42.533+09:00  INFO 7532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T12:12:42.534+09:00  INFO 7532 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
+2024-06-14T12:12:42.790+09:00  INFO 7532 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T12:12:42.866+09:00  INFO 7532 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2024-06-14T12:12:43.043+09:00  WARN 7532 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-06-14T12:12:43.129+09:00  INFO 7532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T12:12:43.203+09:00  INFO 7532 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@62cfd8a7
+2024-06-14T12:12:43.204+09:00  INFO 7532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T12:12:43.222+09:00  INFO 7532 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-06-14T12:12:43.772+09:00  INFO 7532 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14T12:12:43.778+09:00  INFO 7532 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:12:44.069+09:00  WARN 7532 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T12:12:44.389+09:00  INFO 7532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-14T12:12:44.419+09:00  INFO 7532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-14T12:12:44.428+09:00  INFO 7532 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.629 seconds (process running for 4.076)
+2024-06-14T12:13:55.652+09:00  INFO 7532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T12:13:55.652+09:00  INFO 7532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T12:13:55.653+09:00  INFO 7532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-14T12:13:55.784+09:00 ERROR 7532 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.] with root cause
 
-java.sql.SQLSyntaxErrorException: (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:334) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:311) ~[mariadb-java-client-3.1.2.jar:na]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3380) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3979) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:103) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:612) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:483) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:480) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:329) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1419) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:473) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2231) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1927) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
+jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:170) ~[spring-context-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.0.jar:3.3.0]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -164,60 +85,14 @@ java.sql.SQLSyntaxErrorException: (conn=13) Incorrect string value: '\xEB\xAC\xB
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-2024-06-12T10:19:43.943+09:00  WARN 18020 --- [http-nio-8080-exec-6] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:19:43.943+09:00  WARN 18020 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:19:43.943+09:00 ERROR 18020 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:19:43.944+09:00 ERROR 18020 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
+2024-06-14T12:14:18.455+09:00 ERROR 7532 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.] with root cause
 
-java.sql.SQLSyntaxErrorException: (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:334) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:311) ~[mariadb-java-client-3.1.2.jar:na]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3380) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3979) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:103) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:612) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:483) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:480) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:329) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1419) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:473) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2231) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1927) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
+jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:170) ~[spring-context-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.0.jar:3.3.0]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -269,43 +144,191 @@ java.sql.SQLSyntaxErrorException: (conn=13) Incorrect string value: '\xEB\xAC\xB
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-2024-06-12T10:22:26.495+09:00 DEBUG 18020 --- [http-nio-8080-exec-8] o.m.i.o.m.i.controller.ItemController    : request add item id = test1
-2024-06-12T10:23:24.964+09:00  INFO 18020 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:23:24.967+09:00  INFO 18020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:23:24.971+09:00  INFO 18020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:23:27.935+09:00  INFO 2496 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 2496 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:23:27.937+09:00 DEBUG 2496 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:23:27.937+09:00  INFO 2496 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:23:27.985+09:00  INFO 2496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:23:27.985+09:00  INFO 2496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:23:28.566+09:00  INFO 2496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:23:28.621+09:00  INFO 2496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
-2024-06-12T10:23:29.193+09:00  INFO 2496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:23:29.205+09:00  INFO 2496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:23:29.206+09:00  INFO 2496 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:23:29.266+09:00  INFO 2496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:23:29.268+09:00  INFO 2496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
-2024-06-12T10:23:29.514+09:00  INFO 2496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:23:29.629+09:00  INFO 2496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:23:29.811+09:00  WARN 2496 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:23:29.902+09:00  INFO 2496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:23:29.976+09:00  INFO 2496 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@11f7cf55
-2024-06-12T10:23:29.978+09:00  INFO 2496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:23:30.002+09:00  INFO 2496 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:23:30.569+09:00  INFO 2496 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:23:30.574+09:00  INFO 2496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:23:30.908+09:00  WARN 2496 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:23:31.360+09:00  INFO 2496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:23:31.397+09:00  INFO 2496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:23:31.407+09:00  INFO 2496 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.937 seconds (process running for 4.365)
-2024-06-12T10:23:37.619+09:00  INFO 2496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:23:37.619+09:00  INFO 2496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:23:37.620+09:00  INFO 2496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-12T10:23:37.796+09:00  WARN 2496 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.msa.item.org.msa.item.dto.ResponseDTO> org.msa.item.org.msa.item.controller.ItemController.add(org.msa.item.org.msa.item.dto.ItemDTO): [Field error in object 'itemDTO' on field 'count': rejected value [0]; codes [Positive.itemDTO.count,Positive.count,Positive.long,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDTO.count,count]; arguments []; default message [count]]; default message [0보다 커야 합니다]] ]
-2024-06-12T10:23:42.595+09:00  WARN 2496 --- [http-nio-8080-exec-4] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:23:42.597+09:00  WARN 2496 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:23:42.597+09:00 ERROR 2496 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=26) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:23:42.607+09:00 ERROR 2496 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
+2024-06-14T12:14:44.472+09:00 ERROR 7532 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.] with root cause
+
+jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:170) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-06-14T12:16:06.242+09:00  INFO 7532 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:16:06.245+09:00  INFO 7532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T12:16:06.248+09:00  INFO 7532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T12:16:09.023+09:00  INFO 8728 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 8728 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
+2024-06-14T12:16:09.024+09:00 DEBUG 8728 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-14T12:16:09.025+09:00  INFO 8728 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T12:16:09.061+09:00  INFO 8728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-14T12:16:09.062+09:00  INFO 8728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-14T12:16:09.599+09:00  INFO 8728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T12:16:09.648+09:00  INFO 8728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-06-14T12:16:10.147+09:00  INFO 8728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-14T12:16:10.159+09:00  INFO 8728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T12:16:10.160+09:00  INFO 8728 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T12:16:10.206+09:00  INFO 8728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T12:16:10.207+09:00  INFO 8728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1145 ms
+2024-06-14T12:16:10.396+09:00  INFO 8728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T12:16:10.455+09:00  INFO 8728 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2024-06-14T12:16:10.606+09:00  WARN 8728 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-06-14T12:16:10.681+09:00  INFO 8728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T12:16:10.738+09:00  INFO 8728 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6a49bb90
+2024-06-14T12:16:10.740+09:00  INFO 8728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T12:16:10.756+09:00  INFO 8728 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-06-14T12:16:11.222+09:00  INFO 8728 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14T12:16:11.230+09:00  INFO 8728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:16:11.468+09:00  WARN 8728 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T12:16:11.884+09:00  INFO 8728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-14T12:16:11.927+09:00  INFO 8728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-14T12:16:11.939+09:00  INFO 8728 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.27 seconds (process running for 3.63)
+2024-06-14T12:16:25.599+09:00  INFO 8728 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T12:16:25.600+09:00  INFO 8728 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T12:16:25.600+09:00  INFO 8728 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-14T12:16:25.765+09:00 ERROR 8728 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.] with root cause
+
+jakarta.validation.ConstraintViolationException: add.itemType: 허용되지 않은 물품 유형입니다.
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:170) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-06-14T12:17:37.063+09:00  INFO 8728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:17:37.066+09:00  INFO 8728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T12:17:37.069+09:00  INFO 8728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T12:17:40.110+09:00  INFO 6092 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 6092 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
+2024-06-14T12:17:40.112+09:00 DEBUG 6092 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-14T12:17:40.113+09:00  INFO 6092 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T12:17:40.155+09:00  INFO 6092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-14T12:17:40.155+09:00  INFO 6092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-14T12:17:40.707+09:00  INFO 6092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T12:17:40.755+09:00  INFO 6092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-06-14T12:17:41.285+09:00  INFO 6092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-14T12:17:41.297+09:00  INFO 6092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T12:17:41.297+09:00  INFO 6092 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T12:17:41.341+09:00  INFO 6092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T12:17:41.342+09:00  INFO 6092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1186 ms
+2024-06-14T12:17:41.535+09:00  INFO 6092 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T12:17:41.598+09:00  INFO 6092 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2024-06-14T12:17:41.816+09:00  WARN 6092 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-06-14T12:17:41.888+09:00  INFO 6092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T12:17:41.950+09:00  INFO 6092 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4be17d1e
+2024-06-14T12:17:41.951+09:00  INFO 6092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T12:17:41.966+09:00  INFO 6092 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-06-14T12:17:42.457+09:00  INFO 6092 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14T12:17:42.463+09:00  INFO 6092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:17:42.720+09:00  WARN 6092 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T12:17:43.085+09:00  INFO 6092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-14T12:17:43.117+09:00  INFO 6092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-14T12:17:43.127+09:00  INFO 6092 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.459 seconds (process running for 3.819)
+2024-06-14T12:17:58.014+09:00  INFO 6092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T12:17:58.014+09:00  INFO 6092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T12:17:58.014+09:00  INFO 6092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-14T12:17:58.138+09:00  INFO 6092 --- [http-nio-8080-exec-1] o.m.i.o.m.i.controller.ItemController    : itemTypeF
+2024-06-14T12:17:58.233+09:00  WARN 6092 --- [http-nio-8080-exec-1] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
+2024-06-14T12:17:58.234+09:00  WARN 6092 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
+2024-06-14T12:17:58.234+09:00 ERROR 6092 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=26) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
+2024-06-14T12:17:58.241+09:00 ERROR 6092 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
 
 java.sql.SQLSyntaxErrorException: (conn=26) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
 	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
@@ -353,9 +376,22 @@ java.sql.SQLSyntaxErrorException: (conn=26) Incorrect string value: '\xEB\xAC\xB
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
+	at jdk.proxy4/jdk.proxy4.$Proxy110.save(Unknown Source) ~[na:na]
+	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:30) ~[classes/:na]
+	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -407,44 +443,13 @@ java.sql.SQLSyntaxErrorException: (conn=26) Incorrect string value: '\xEB\xAC\xB
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-2024-06-12T10:24:07.661+09:00 DEBUG 2496 --- [http-nio-8080-exec-6] o.m.i.o.m.i.controller.ItemController    : request add item id = test1
-2024-06-12T10:28:53.208+09:00  INFO 2496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:28:53.212+09:00  INFO 2496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:28:53.216+09:00  INFO 2496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:28:57.204+09:00  INFO 17676 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 17676 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:28:57.207+09:00 DEBUG 17676 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:28:57.207+09:00  INFO 17676 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:28:57.248+09:00  INFO 17676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:28:57.248+09:00  INFO 17676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:28:57.801+09:00  INFO 17676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:28:57.848+09:00  INFO 17676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
-2024-06-12T10:28:58.366+09:00  INFO 17676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:28:58.379+09:00  INFO 17676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:28:58.380+09:00  INFO 17676 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:28:58.425+09:00  INFO 17676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:28:58.426+09:00  INFO 17676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
-2024-06-12T10:28:58.614+09:00  INFO 17676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:28:58.687+09:00  INFO 17676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:28:58.867+09:00  WARN 17676 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:28:58.942+09:00  INFO 17676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:28:59.008+09:00  INFO 17676 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@64a51fe8
-2024-06-12T10:28:59.010+09:00  INFO 17676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:28:59.029+09:00  INFO 17676 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:28:59.498+09:00  INFO 17676 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:28:59.503+09:00  INFO 17676 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:28:59.733+09:00  WARN 17676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:29:00.134+09:00  INFO 17676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:29:00.173+09:00  INFO 17676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:29:00.185+09:00  INFO 17676 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.337 seconds (process running for 3.711)
-2024-06-12T10:29:07.045+09:00  INFO 17676 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:29:07.046+09:00  INFO 17676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:29:07.046+09:00  INFO 17676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-12T10:29:07.230+09:00  WARN 17676 --- [http-nio-8080-exec-2] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:29:07.232+09:00  WARN 17676 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:29:07.232+09:00 ERROR 17676 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=3) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:29:07.237+09:00 ERROR 17676 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
+2024-06-14T12:19:20.077+09:00  INFO 6092 --- [http-nio-8080-exec-4] o.m.i.o.m.i.controller.ItemController    : itemTypeF
+2024-06-14T12:19:20.079+09:00  WARN 6092 --- [http-nio-8080-exec-4] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
+2024-06-14T12:19:20.079+09:00  WARN 6092 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
+2024-06-14T12:19:20.079+09:00 ERROR 6092 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=26) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
+2024-06-14T12:19:20.080+09:00 ERROR 6092 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
 
-java.sql.SQLSyntaxErrorException: (conn=3) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
+java.sql.SQLSyntaxErrorException: (conn=26) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
 	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
 	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
 	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
@@ -490,9 +495,22 @@ java.sql.SQLSyntaxErrorException: (conn=3) Incorrect string value: '\xEB\xAC\xBC
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
+	at jdk.proxy4/jdk.proxy4.$Proxy110.save(Unknown Source) ~[na:na]
+	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:30) ~[classes/:na]
+	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.msa.item.org.msa.item.controller.ItemController$$SpringCGLIB$$0.add(<generated>) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -544,420 +562,36 @@ java.sql.SQLSyntaxErrorException: (conn=3) Incorrect string value: '\xEB\xAC\xBC
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-2024-06-12T10:30:00.391+09:00 DEBUG 17676 --- [http-nio-8080-exec-4] o.m.i.o.m.i.controller.ItemController    : request add item id = test1
-2024-06-12T10:30:02.947+09:00  INFO 17676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:30:02.952+09:00  INFO 17676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:30:02.955+09:00  INFO 17676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:30:08.432+09:00  INFO 3376 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 3376 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:30:08.433+09:00 DEBUG 3376 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:30:08.433+09:00  INFO 3376 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:30:08.464+09:00  INFO 3376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:30:08.465+09:00  INFO 3376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:30:08.986+09:00  INFO 3376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:30:09.027+09:00  INFO 3376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
-2024-06-12T10:30:09.523+09:00  INFO 3376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:30:09.534+09:00  INFO 3376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:30:09.534+09:00  INFO 3376 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:30:09.598+09:00  INFO 3376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:30:09.598+09:00  INFO 3376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
-2024-06-12T10:30:09.833+09:00  INFO 3376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:30:09.901+09:00  INFO 3376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:30:10.072+09:00  WARN 3376 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:30:10.143+09:00  INFO 3376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:30:10.202+09:00  INFO 3376 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2d80c456
-2024-06-12T10:30:10.203+09:00  INFO 3376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:30:10.219+09:00  INFO 3376 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:30:10.668+09:00  INFO 3376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:30:10.673+09:00  INFO 3376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:30:10.990+09:00  WARN 3376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:30:11.396+09:00  INFO 3376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:30:11.431+09:00  INFO 3376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:30:11.440+09:00  INFO 3376 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.35 seconds (process running for 3.698)
-2024-06-12T10:30:12.204+09:00  INFO 3376 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:30:12.204+09:00  INFO 3376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:30:12.204+09:00  INFO 3376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-12T10:30:12.378+09:00  WARN 3376 --- [http-nio-8080-exec-2] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:30:12.379+09:00  WARN 3376 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:30:12.379+09:00 ERROR 3376 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=16) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:30:12.385+09:00 ERROR 3376 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
-
-java.sql.SQLSyntaxErrorException: (conn=16) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:334) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:311) ~[mariadb-java-client-3.1.2.jar:na]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3380) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3979) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:103) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:612) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:483) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:480) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:329) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1419) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:473) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2231) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1927) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.0.jar:3.3.0]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-
-2024-06-12T10:31:26.429+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2d80c456 ((conn=16) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.430+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@63a5605a ((conn=17) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.430+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@f96e7ed ((conn=18) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.430+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@32120fdb ((conn=19) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.431+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@646cd063 ((conn=20) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.431+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2c83db04 ((conn=21) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.431+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@1492e8f6 ((conn=22) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.431+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@365c5168 ((conn=23) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.432+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@34316008 ((conn=24) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.432+09:00  WARN 3376 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6d8c671 ((conn=25) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
-2024-06-12T10:31:26.438+09:00  WARN 3376 --- [http-nio-8080-exec-4] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:31:26.438+09:00  WARN 3376 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:31:26.438+09:00 ERROR 3376 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=3) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:31:26.439+09:00 ERROR 3376 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
-
-java.sql.SQLSyntaxErrorException: (conn=3) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:334) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:311) ~[mariadb-java-client-3.1.2.jar:na]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3380) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3979) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:103) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:612) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:483) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:480) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:329) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1419) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:473) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2231) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1927) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.0.jar:3.3.0]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-
-2024-06-12T10:31:30.330+09:00  INFO 3376 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:31:30.332+09:00  INFO 3376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:31:30.335+09:00  INFO 3376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:31:36.354+09:00  INFO 2404 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 2404 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:31:36.355+09:00 DEBUG 2404 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:31:36.356+09:00  INFO 2404 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:31:36.392+09:00  INFO 2404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:31:36.392+09:00  INFO 2404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:31:36.929+09:00  INFO 2404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:31:36.977+09:00  INFO 2404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
-2024-06-12T10:31:37.482+09:00  INFO 2404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:31:37.492+09:00  INFO 2404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:31:37.492+09:00  INFO 2404 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:31:37.548+09:00  INFO 2404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:31:37.548+09:00  INFO 2404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1151 ms
-2024-06-12T10:31:37.812+09:00  INFO 2404 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:31:37.915+09:00  INFO 2404 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:31:38.075+09:00  WARN 2404 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:31:38.148+09:00  INFO 2404 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:31:38.211+09:00  INFO 2404 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@68d92049
-2024-06-12T10:31:38.213+09:00  INFO 2404 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:31:38.229+09:00  INFO 2404 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:31:38.684+09:00  INFO 2404 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:31:38.688+09:00  INFO 2404 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:31:38.974+09:00  WARN 2404 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:31:39.321+09:00  INFO 2404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:31:39.356+09:00  INFO 2404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:31:39.366+09:00  INFO 2404 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.348 seconds (process running for 3.705)
-2024-06-12T10:31:48.290+09:00  INFO 2404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-12T10:31:48.291+09:00  INFO 2404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-12T10:31:48.292+09:00  INFO 2404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-12T10:31:48.485+09:00  WARN 2404 --- [http-nio-8080-exec-1] o.m.jdbc.message.server.ErrorPacket      : Error: 1366-22007: Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:31:48.487+09:00  WARN 2404 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1366, SQLState: 22007
-2024-06-12T10:31:48.487+09:00 ERROR 2404 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-2024-06-12T10:31:48.493+09:00 ERROR 2404 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]] with root cause
-
-java.sql.SQLSyntaxErrorException: (conn=13) Incorrect string value: '\xEB\xAC\xBC\xED\x92\x88...' for column `msa`.`item`.`description` at row 1
-	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:95) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:334) ~[mariadb-java-client-3.1.2.jar:na]
-	at org.mariadb.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:311) ~[mariadb-java-client-3.1.2.jar:na]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3380) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3979) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:103) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:612) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:483) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:480) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:329) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1419) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:473) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2231) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1927) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.0.0.Final.jar:6.0.0.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.0.jar:3.3.0]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
-	at jdk.proxy4/jdk.proxy4.$Proxy109.save(Unknown Source) ~[na:na]
-	at org.msa.item.org.msa.item.service.ItemService.insertItem(ItemService.java:29) ~[classes/:na]
-	at org.msa.item.org.msa.item.controller.ItemController.add(ItemController.java:27) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-
-2024-06-12T10:32:25.927+09:00 DEBUG 2404 --- [http-nio-8080-exec-4] o.m.i.o.m.i.controller.ItemController    : request add item id = test1
-2024-06-12T10:33:08.868+09:00  INFO 2404 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:33:08.872+09:00  INFO 2404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-12T10:33:08.874+09:00  INFO 2404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-12T10:33:12.436+09:00  INFO 3660 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 3660 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
-2024-06-12T10:33:12.438+09:00 DEBUG 3660 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
-2024-06-12T10:33:12.438+09:00  INFO 3660 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
-2024-06-12T10:33:12.485+09:00  INFO 3660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-12T10:33:12.485+09:00  INFO 3660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-12T10:33:13.090+09:00  INFO 3660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-12T10:33:13.140+09:00  INFO 3660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
-2024-06-12T10:33:13.775+09:00  INFO 3660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-12T10:33:13.790+09:00  INFO 3660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-12T10:33:13.790+09:00  INFO 3660 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-12T10:33:13.836+09:00  INFO 3660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-12T10:33:13.837+09:00  INFO 3660 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1351 ms
-2024-06-12T10:33:14.059+09:00  INFO 3660 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-12T10:33:14.145+09:00  INFO 3660 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
-2024-06-12T10:33:14.354+09:00  WARN 3660 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2024-06-12T10:33:14.445+09:00  INFO 3660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-12T10:33:14.509+09:00  INFO 3660 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@43c31cff
-2024-06-12T10:33:14.511+09:00  INFO 3660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-12T10:33:14.530+09:00  INFO 3660 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2024-06-12T10:33:15.034+09:00  INFO 3660 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-12T10:33:15.038+09:00  INFO 3660 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-12T10:33:15.318+09:00  WARN 3660 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-12T10:33:15.674+09:00  INFO 3660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-12T10:33:15.706+09:00  INFO 3660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-06-12T10:33:15.715+09:00  INFO 3660 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.942 seconds (process running for 4.396)
+2024-06-14T12:20:39.547+09:00  INFO 6092 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:20:39.552+09:00  INFO 6092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T12:20:39.556+09:00  INFO 6092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T12:20:41.122+09:00  INFO 2136 --- [restartedMain] org.msa.item.ItemServiceApplication      : Starting ItemServiceApplication using Java 17.0.11 with PID 2136 (C:\2-1.Microservice\item-service\out\production\classes started by kitworks in C:\2-1.Microservice\item-service)
+2024-06-14T12:20:41.124+09:00 DEBUG 2136 --- [restartedMain] org.msa.item.ItemServiceApplication      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-14T12:20:41.124+09:00  INFO 2136 --- [restartedMain] org.msa.item.ItemServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T12:20:41.167+09:00  INFO 2136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-14T12:20:41.167+09:00  INFO 2136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-14T12:20:41.728+09:00  INFO 2136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T12:20:41.777+09:00  INFO 2136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-06-14T12:20:42.320+09:00  INFO 2136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-14T12:20:42.335+09:00  INFO 2136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T12:20:42.336+09:00  INFO 2136 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T12:20:42.383+09:00  INFO 2136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T12:20:42.384+09:00  INFO 2136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1217 ms
+2024-06-14T12:20:42.564+09:00  INFO 2136 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T12:20:42.628+09:00  INFO 2136 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2024-06-14T12:20:42.878+09:00  WARN 2136 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-06-14T12:20:42.954+09:00  INFO 2136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T12:20:43.016+09:00  INFO 2136 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2d80c456
+2024-06-14T12:20:43.018+09:00  INFO 2136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T12:20:43.034+09:00  INFO 2136 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-06-14T12:20:43.510+09:00  INFO 2136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14T12:20:43.515+09:00  INFO 2136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T12:20:43.791+09:00  WARN 2136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T12:20:44.116+09:00  INFO 2136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-14T12:20:44.154+09:00  INFO 2136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-14T12:20:44.166+09:00  INFO 2136 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 3.416 seconds (process running for 3.806)
+2024-06-14T12:20:50.593+09:00  INFO 2136 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T12:20:50.593+09:00  INFO 2136 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T12:20:50.594+09:00  INFO 2136 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-14T12:20:50.723+09:00  INFO 2136 --- [http-nio-8080-exec-2] o.m.i.o.m.i.controller.ItemController    : itemTypeF
+2024-06-14T12:20:50.819+09:00 DEBUG 2136 --- [http-nio-8080-exec-2] o.m.i.o.m.i.controller.ItemController    : request add item id = test1

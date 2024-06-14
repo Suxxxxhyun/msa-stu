@@ -16,8 +16,12 @@ public class ItemDTO {
 
     @Size(max=200, message = "설명은 최대 200자까지 작성가능합니다.")
     private String description;
+
+    private String itemType;
+
     @Positive //양수만 입력가능하도록 설정
     private long count;
+
     private String regDts;
     private String updDts; //물품의 최종수정일시
 }
